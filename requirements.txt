@@ -9,7 +9,7 @@ google-auth==2.1.0
 google-auth-httplib2==0.1.0
 google-auth-oauthlib==0.4.6
 googleapis-common-protos==1.53.0
-httplib2==0.19.1
+httplib2
 idna==3.2
 motor==3.1.2
 oauth2client==4.1.3
