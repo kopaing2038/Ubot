@@ -7,19 +7,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config:
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
-    SESSION_NAME = ":memory:"
+    BOT_TOKEN = "7191544925:AAF1wNdb4SfdbzM6-691e0eNio4EmAqkRQ4"
 
-    API_ID = int(os.environ.get("API_ID"))
+    SESSION_NAME = os.environ.get('SESSION', 'Media_search')
+    
+    API_ID = "21970746"
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = "32deb816dc3874e871b6158673fd3683"
 
-    CLIENT_ID = os.environ.get("CLIENT_ID")
+    CLIENT_ID = "298717439916-k4j5oj9tmhrkqf6r8u4m8s269hhu7p31.apps.googleusercontent.com"
 
-    CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
+    CLIENT_SECRET = "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"
 
-    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+    BOT_OWNER = "1113630298"
 
     BOT_START_TIME = time.time()
     
@@ -27,13 +28,13 @@ class Config:
 
     DB_NAME = os.environ.get("DB_NAME", "Utubeitbot")  
 
-    DB_URL = os.environ.get("DB_URL")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://pmbot1:pmbot1@cluster0.esuavhf.mongodb.net/?retryWrites=true&w=majority")
 
     SUPPORT_CHAT_LINK = os.environ.get("SUPPORT_CHAT_LINK")
 
     AUTH_USERS_TEXT = os.environ.get("AUTH_USERS", "")
 
-    AUTH_USERS = [BOT_OWNER, 754495556] + (
+    AUTH_USERS = [BOT_OWNER, 1113630298] + (
         [int(user.strip()) for user in AUTH_USERS_TEXT.split(",")]
         if AUTH_USERS_TEXT
         else []
